@@ -1,0 +1,141 @@
+*** Starting early exit test.
+2024/07/16 14:15:14 serving HTTP at unix://var/tmp/5840-mr-1000
+2024/07/16 14:15:15 allocate map task: ../pg-tom_sawyer.txt
+2024/07/16 14:15:15 allocate map task: ../pg-metamorphosis.txt
+2024/07/16 14:15:15 done map task: ../pg-tom_sawyer.txt
+2024/07/16 14:15:15 allocate map task: ../pg-dorian_gray.txt
+2024/07/16 14:15:15 done map task: ../pg-metamorphosis.txt
+2024/07/16 14:15:15 allocate map task: ../pg-grimm.txt
+2024/07/16 14:15:15 allocate map task: ../pg-being_ernest.txt
+2024/07/16 14:15:15 done map task: ../pg-being_ernest.txt
+2024/07/16 14:15:15 done map task: ../pg-grimm.txt
+2024/07/16 14:15:15 allocate map task: ../pg-huckleberry_finn.txt
+2024/07/16 14:15:15 allocate map task: ../pg-sherlock_holmes.txt
+2024/07/16 14:15:15 done map task: ../pg-dorian_gray.txt
+2024/07/16 14:15:15 allocate map task: ../pg-frankenstein.txt
+2024/07/16 14:15:15 done map task: ../pg-sherlock_holmes.txt
+2024/07/16 14:15:15 done map task: ../pg-huckleberry_finn.txt
+2024/07/16 14:15:15 done map task: ../pg-frankenstein.txt
+2024/07/16 14:15:15 allocate reduce task: 6
+2024/07/16 14:15:16 allocate reduce task: 5
+2024/07/16 14:15:16 done map task: 5
+2024/07/16 14:15:16 allocate reduce task: 3
+2024/07/16 14:15:16 allocate reduce task: 2
+2024/07/16 14:15:16 done map task: 3
+2024/07/16 14:15:16 allocate reduce task: 8
+2024/07/16 14:15:16 done map task: 8
+2024/07/16 14:15:16 allocate reduce task: 9
+2024/07/16 14:15:16 done map task: 9
+2024/07/16 14:15:18 done map task: 6
+2024/07/16 14:15:19 done map task: 2
+2024/07/16 14:15:19 my worker job here is done, exitting . . . 
+2024/07/16 14:15:19 my worker job here is done, exitting . . . 
+2024/07/16 14:15:19 my worker job here is done, exitting . . . 
+2024/07/16 14:15:20 Done() is actually done -> waiting to exit
+--- early exit test: PASS
+*** Starting crash test.
+2024/07/16 14:15:21 map ../pg-being_ernest.txt
+2024/07/16 14:15:21 map ../pg-dorian_gray.txt
+2024/07/16 14:15:21 map ../pg-frankenstein.txt
+2024/07/16 14:15:21 map ../pg-grimm.txt
+2024/07/16 14:15:21 map ../pg-huckleberry_finn.txt
+2024/07/16 14:15:21 map ../pg-metamorphosis.txt
+2024/07/16 14:15:21 map ../pg-sherlock_holmes.txt
+2024/07/16 14:15:21 map ../pg-tom_sawyer.txt
+2024/07/16 14:15:21 reduce a
+2024/07/16 14:15:21 reduce b
+2024/07/16 14:15:21 reduce c
+2024/07/16 14:15:21 reduce d
+2024/07/16 14:15:21 serving HTTP at unix://var/tmp/5840-mr-1000
+2024/07/16 14:15:22 allocate map task: ../pg-being_ernest.txt
+2024/07/16 14:15:22 allocate map task: ../pg-metamorphosis.txt
+2024/07/16 14:15:22 allocate map task: ../pg-dorian_gray.txt
+2024/07/16 14:15:22 allocate map task: ../pg-huckleberry_finn.txt
+2024/07/16 14:15:22 crash.go oopsie, crashed
+2024/07/16 14:15:22 crash.go oopsie, crashed
+2024/07/16 14:15:23 allocate map task: ../pg-frankenstein.txt
+2024/07/16 14:15:23 allocate map task: ../pg-sherlock_holmes.txt
+2024/07/16 14:15:23 map ../pg-frankenstein.txt
+2024/07/16 14:15:23 done map task: ../pg-frankenstein.txt
+2024/07/16 14:15:23 crash.go oopsie, crashed
+2024/07/16 14:15:23 allocate map task: ../pg-tom_sawyer.txt
+2024/07/16 14:15:23 crash.go oopsie, crashed
+2024/07/16 14:15:24 allocate map task: ../pg-grimm.txt
+2024/07/16 14:15:25 map ../pg-being_ernest.txt
+2024/07/16 14:15:25 done map task: ../pg-being_ernest.txt
+2024/07/16 14:15:26 map ../pg-grimm.txt
+2024/07/16 14:15:26 done map task: ../pg-grimm.txt
+2024/07/16 14:15:28 map ../pg-metamorphosis.txt
+2024/07/16 14:15:28 done map task: ../pg-metamorphosis.txt
+2024/07/16 14:16:11 kill map job ../pg-grimm.txt
+2024/07/16 14:16:11 kill map job ../pg-huckleberry_finn.txt
+2024/07/16 14:16:11 kill map job ../pg-metamorphosis.txt
+2024/07/16 14:16:11 kill map job ../pg-sherlock_holmes.txt
+2024/07/16 14:16:11 kill map job ../pg-tom_sawyer.txt
+2024/07/16 14:16:11 kill map job ../pg-being_ernest.txt
+2024/07/16 14:16:11 kill map job ../pg-dorian_gray.txt
+2024/07/16 14:16:11 kill map job ../pg-frankenstein.txt
+2024/07/16 14:16:11 allocate map task: ../pg-tom_sawyer.txt
+2024/07/16 14:16:11 map ../pg-tom_sawyer.txt
+2024/07/16 14:16:11 done map task: ../pg-tom_sawyer.txt
+2024/07/16 14:16:11 allocate map task: ../pg-sherlock_holmes.txt
+2024/07/16 14:16:11 crash.go oopsie, crashed
+2024/07/16 14:16:11 allocate map task: ../pg-frankenstein.txt
+2024/07/16 14:16:11 map ../pg-frankenstein.txt
+2024/07/16 14:16:11 done map task: ../pg-frankenstein.txt
+2024/07/16 14:16:11 allocate map task: ../pg-being_ernest.txt
+2024/07/16 14:16:11 allocate map task: ../pg-grimm.txt
+2024/07/16 14:16:11 map ../pg-grimm.txt
+2024/07/16 14:16:11 done map task: ../pg-grimm.txt
+2024/07/16 14:16:11 allocate map task: ../pg-dorian_gray.txt
+2024/07/16 14:16:11 crash.go oopsie, crashed
+2024/07/16 14:16:11 allocate map task: ../pg-metamorphosis.txt
+2024/07/16 14:16:11 crash.go oopsie, crashed
+2024/07/16 14:16:12 allocate map task: ../pg-huckleberry_finn.txt
+2024/07/16 14:16:12 map ../pg-huckleberry_finn.txt
+2024/07/16 14:16:12 done map task: ../pg-huckleberry_finn.txt
+2024/07/16 14:16:19 map ../pg-being_ernest.txt
+2024/07/16 14:16:19 done map task: ../pg-being_ernest.txt
+2024/07/16 14:17:01 kill map job ../pg-sherlock_holmes.txt
+2024/07/16 14:17:01 kill map job ../pg-tom_sawyer.txt
+2024/07/16 14:17:01 kill map job ../pg-being_ernest.txt
+2024/07/16 14:17:01 kill map job ../pg-dorian_gray.txt
+2024/07/16 14:17:01 kill map job ../pg-frankenstein.txt
+2024/07/16 14:17:01 kill map job ../pg-grimm.txt
+2024/07/16 14:17:01 kill map job ../pg-huckleberry_finn.txt
+2024/07/16 14:17:01 kill map job ../pg-metamorphosis.txt
+2024/07/16 14:17:01 allocate map task: ../pg-huckleberry_finn.txt
+2024/07/16 14:17:01 allocate map task: ../pg-metamorphosis.txt
+2024/07/16 14:17:02 allocate map task: ../pg-tom_sawyer.txt
+2024/07/16 14:17:06 kill map job ../pg-frankenstein.txt
+2024/07/16 14:17:06 kill map job ../pg-grimm.txt
+2024/07/16 14:17:06 kill map job ../pg-sherlock_holmes.txt
+2024/07/16 14:17:06 kill map job ../pg-being_ernest.txt
+2024/07/16 14:17:06 kill map job ../pg-dorian_gray.txt
+2024/07/16 14:17:06 map ../pg-tom_sawyer.txt
+2024/07/16 14:17:06 done map task: ../pg-tom_sawyer.txt
+2024/07/16 14:17:06 allocate map task: ../pg-sherlock_holmes.txt
+2024/07/16 14:17:06 map ../pg-sherlock_holmes.txt
+2024/07/16 14:17:06 done map task: ../pg-sherlock_holmes.txt
+2024/07/16 14:17:06 allocate map task: ../pg-grimm.txt
+2024/07/16 14:17:06 crash.go oopsie, crashed
+2024/07/16 14:17:07 allocate map task: ../pg-being_ernest.txt
+2024/07/16 14:17:07 map ../pg-being_ernest.txt
+2024/07/16 14:17:07 done map task: ../pg-being_ernest.txt
+2024/07/16 14:17:07 allocate map task: ../pg-dorian_gray.txt
+2024/07/16 14:17:07 map ../pg-dorian_gray.txt
+2024/07/16 14:17:07 done map task: ../pg-dorian_gray.txt
+2024/07/16 14:17:07 allocate map task: ../pg-frankenstein.txt
+2024/07/16 14:17:07 crash.go oopsie, crashed
+2024/07/16 14:17:08 map ../pg-metamorphosis.txt
+2024/07/16 14:17:08 done map task: ../pg-metamorphosis.txt
+2024/07/16 14:17:09 map ../pg-huckleberry_finn.txt
+2024/07/16 14:17:09 done map task: ../pg-huckleberry_finn.txt
+2024/07/16 14:17:21 dialing:dial unix /var/tmp/5840-mr-1000: connect: connection refused
+2024/07/16 14:17:21 dialing:dial unix /var/tmp/5840-mr-1000: connect: connection refused
+2024/07/16 14:17:21 dialing:dial unix /var/tmp/5840-mr-1000: connect: connection refused
+sort: cannot read: 'mr-out*': No such file or directory
+cmp: EOF on mr-crash-all which is empty
+--- crash output is not the same as mr-correct-crash.txt
+--- crash test: FAIL
+*** FAILED SOME TESTS
